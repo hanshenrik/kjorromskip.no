@@ -14,7 +14,7 @@
   .floating-spaceship {
     animation-name: move-around;
     animation-delay: 1s;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
   }
