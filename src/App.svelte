@@ -27,7 +27,7 @@
       transform: translate(100px, -100px) rotate(0);
     }
     25% {
-      transform: translate(80px, 0) rotate(90deg);
+      transform: translate(70px, 0) rotate(90deg);
     }
     50% {
       transform: translate(150px, 100px) rotate(30deg);
