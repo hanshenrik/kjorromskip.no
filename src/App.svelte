@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-size: 10rem;
+    font-size: 7rem;
   }
 
   .floating-spaceship {
