@@ -22,6 +22,7 @@
 
   .youtube {
     box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
   }
 
   @keyframes move-around {
