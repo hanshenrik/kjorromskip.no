@@ -26,6 +26,7 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+    gap: 2rem;
     height: 100%;
   }
 
