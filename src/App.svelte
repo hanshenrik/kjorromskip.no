@@ -83,13 +83,14 @@
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen />
 
+  <!-- Messenger Chat Plugin -->
   <div id="fb-root" />
-  <!-- Your Chat Plugin code -->
   <div
     class="fb-customerchat"
     attribution="setup_tool"
     page_id="143074806532195"
     theme_color="#0A7CFF"
+    greeting_dialog_display="hide"
     logged_in_greeting="Heisann! Var det noe?"
     logged_out_greeting="Heisann! Var det noe?" />
 </div>
