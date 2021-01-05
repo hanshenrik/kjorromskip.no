@@ -25,8 +25,8 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    justify-items: center;
     height: 100%;
-    font-size: 7rem;
   }
 
   .floating-spaceship {
@@ -36,11 +36,45 @@
     animation-duration: 20s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
+    font-size: 4rem;
   }
 
-  .youtube {
-    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+  .cover {
+    height: 171px;
     max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  @media only screen and (min-width: 375px) {
+    .cover {
+      height: 202px;
+    }
+  }
+
+  @media only screen and (min-width: 414px) {
+    .cover {
+      height: 224px;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .cover {
+      height: 315px;
+    }
+  }
+
+  .cover-link .cover {
+    transition: filter 0.6s ease-in-out;
+  }
+  .cover-link:hover .cover {
+    filter: hue-rotate(180deg);
+  }
+
+  .release {
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
   }
 
   @keyframes move-around {
@@ -72,16 +106,32 @@
 </style>
 
 <div class="wrapper">
+  <div class="release">
+    <iframe
+      title="Kjør Romskip – Romturist"
+      class="cover"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen />
+    Romturist (musikkvideo)
+  </div>
+  <div class="release">
+    <a
+      href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
+      class="cover-link"
+      rel="noopener noreferrer"
+      target="_blank">
+      <img
+        src="https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg"
+        alt="Chili Cheese / Premadonna"
+        class="cover" />
+    </a>
+    Chili Cheese / Premadonna
+  </div>
   <div class="floating-spaceship">{name}</div>
-  <iframe
-    title="Kjør Romskip – Romturist"
-    class="youtube"
-    width="560"
-    height="315"
-    src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen />
 
   <!-- Messenger Chat Plugin -->
   <div id="fb-root" />
