@@ -119,6 +119,7 @@
       allowfullscreen />
     Romturist (musikkvideo)
   </div>
+  <div class="floating-spaceship">{name}</div>
   <div class="release">
     <a
       href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
@@ -132,7 +133,6 @@
     </a>
     Chili Cheese / Premadonna
   </div>
-  <div class="floating-spaceship">{name}</div>
 
   <!-- Messenger Chat Plugin -->
   <div id="fb-root" />
