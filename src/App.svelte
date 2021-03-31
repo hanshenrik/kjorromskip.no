@@ -1,23 +1,5 @@
 <script>
   export let name;
-
-  // Load Facebook SDK for JavaScript
-  window.fbAsyncInit = function () {
-    FB.init({
-      xfbml: true,
-      version: "v9.0",
-    });
-  };
-
-  (function (d, s, id) {
-    var js,
-      fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s);
-    js.id = id;
-    js.src = "https://connect.facebook.net/nb_NO/sdk/xfbml.customerchat.js";
-    fjs.parentNode.insertBefore(js, fjs);
-  })(document, "script", "facebook-jssdk");
 </script>
 
 <style>
@@ -133,15 +115,4 @@
     </a>
     Chili Cheese / Premadonna
   </div>
-
-  <!-- Messenger Chat Plugin -->
-  <div id="fb-root" />
-  <div
-    class="fb-customerchat"
-    attribution="setup_tool"
-    page_id="143074806532195"
-    theme_color="#0A7CFF"
-    greeting_dialog_display="hide"
-    logged_in_greeting="Heisann! Var det noe?"
-    logged_out_greeting="Heisann! Var det noe?" />
 </div>
