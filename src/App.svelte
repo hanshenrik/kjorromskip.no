@@ -17,20 +17,42 @@
     Romturist (musikkvideo)
   </div>
   <div class="floating-spaceship">{name}</div>
-  <div class="release">
-    <a
-      href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
-      class="cover-link"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
-      <img
-        src="https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg"
-        alt="Chili Cheese / Premadonna"
-        class="cover"
-      />
-    </a>
-    Chili Cheese / Premadonna
+  <h1>Musikk</h1>
+  <div class="releases">
+    <div class="release">
+      <a
+        href="https://open.spotify.com/track/0ftuszDppBh03LyyoUZwO8?si=e01f34bd13c840b4"
+        class="cover-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="https://i1.sndcdn.com/artworks-000572129276-8kpg9o-t500x500.jpg"
+          alt="Romturist"
+          class="cover"
+        />
+      </a>
+      Romturist
+    </div>
+    <div class="release">
+      <a
+        href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
+        class="cover-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg"
+          alt="Chili Cheese / Premadonna"
+          class="cover"
+        />
+      </a>
+      Chili Cheese / Premadonna
+    </div>
+  </div>
+  <div class="contact">
+    <h1>Kontakt</h1>
+    <a href="mailto:kjor.romskip@gmail.com">kjor.romskip@gmail.com</a>
   </div>
 </div>
 
@@ -41,7 +63,7 @@
     align-items: center;
     justify-items: center;
     gap: 2rem;
-    height: 100%;
+    padding: 5rem 0;
   }
 
   .floating-spaceship {
@@ -86,10 +108,27 @@
     filter: hue-rotate(180deg);
   }
 
+  .releases {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+  @media only screen and (min-width: 768px) {
+    .releases {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
   .release {
     display: grid;
     justify-items: center;
     gap: 1rem;
+  }
+
+  .contact {
+    text-align: center;
+    font-size: 0.8rem;
   }
 
   @keyframes move-around {
