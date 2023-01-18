@@ -2,6 +2,38 @@
   export let name;
 </script>
 
+<div class="wrapper">
+  <div class="release">
+    <iframe
+      title="Kjør Romskip – Romturist"
+      class="cover"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+    Romturist (musikkvideo)
+  </div>
+  <div class="floating-spaceship">{name}</div>
+  <div class="release">
+    <a
+      href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
+      class="cover-link"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <img
+        src="https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg"
+        alt="Chili Cheese / Premadonna"
+        class="cover"
+      />
+    </a>
+    Chili Cheese / Premadonna
+  </div>
+</div>
+
 <style>
   .wrapper {
     display: grid;
@@ -87,32 +119,3 @@
     }
   }
 </style>
-
-<div class="wrapper">
-  <div class="release">
-    <iframe
-      title="Kjør Romskip – Romturist"
-      class="cover"
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen />
-    Romturist (musikkvideo)
-  </div>
-  <div class="floating-spaceship">{name}</div>
-  <div class="release">
-    <a
-      href="https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A"
-      class="cover-link"
-      rel="noopener noreferrer"
-      target="_blank">
-      <img
-        src="https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg"
-        alt="Chili Cheese / Premadonna"
-        class="cover" />
-    </a>
-    Chili Cheese / Premadonna
-  </div>
-</div>
