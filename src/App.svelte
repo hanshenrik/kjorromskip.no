@@ -6,7 +6,7 @@
   <div class="release">
     <iframe
       title="Kjør Romskip – Romturist"
-      class="cover"
+      class="youtube"
       width="560"
       height="315"
       src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
@@ -21,18 +21,18 @@
   <div class="releases">
     <div class="release">
       <a
-        href="https://open.spotify.com/track/0ftuszDppBh03LyyoUZwO8?si=e01f34bd13c840b4"
+        href="https://open.spotify.com/track/25p9haFiESoTwbjdQWKplu?si=c3e5c7ce1794477d"
         class="cover-link"
         rel="noopener noreferrer"
         target="_blank"
       >
         <img
-          src="https://i1.sndcdn.com/artworks-000572129276-8kpg9o-t500x500.jpg"
-          alt="Romturist"
+          src="https://i1.sndcdn.com/artworks-rjAKbKgxRT3NSpcG-5OQ9JQ-t500x500.jpg"
+          alt="mr rino"
           class="cover"
         />
       </a>
-      Romturist
+      mr rino
     </div>
     <div class="release">
       <a
@@ -48,6 +48,21 @@
         />
       </a>
       Chili Cheese / Premadonna
+    </div>
+    <div class="release">
+      <a
+        href="https://open.spotify.com/track/0ftuszDppBh03LyyoUZwO8?si=e01f34bd13c840b4"
+        class="cover-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="https://i1.sndcdn.com/artworks-000572129276-8kpg9o-t500x500.jpg"
+          alt="Romturist"
+          class="cover"
+        />
+      </a>
+      Romturist
     </div>
   </div>
   <div class="contact">
@@ -76,27 +91,36 @@
     font-size: 4rem;
   }
 
+  .youtube,
   .cover {
-    height: 171px;
-    max-width: 100%;
     border-radius: 4px;
     box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
   }
 
+  .cover {
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .youtube {
+    max-width: 100%;
+    height: 171px;
+  }
+
   @media only screen and (min-width: 375px) {
-    .cover {
+    .youtube {
       height: 202px;
     }
   }
 
   @media only screen and (min-width: 414px) {
-    .cover {
+    .youtube {
       height: 224px;
     }
   }
 
   @media only screen and (min-width: 768px) {
-    .cover {
+    .youtube {
       height: 315px;
     }
   }
