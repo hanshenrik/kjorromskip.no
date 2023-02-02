@@ -94,7 +94,7 @@
   .youtube,
   .cover {
     border-radius: 4px;
-    box-shadow: 0 0 16px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: -6px 6px 0px 0px rgba(0, 0, 0, 0.7);
   }
 
   .cover {
@@ -126,10 +126,13 @@
   }
 
   .cover-link .cover {
-    transition: filter 0.6s ease-in-out;
+    transition: filter 1s ease-in-out, transform 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
   }
   .cover-link:hover .cover {
     filter: hue-rotate(180deg);
+    box-shadow: -10px 10px 0px 0px rgba(0, 0, 0, 0.7);
+    transform: translate(4px, -4px);
   }
 
   .releases {
