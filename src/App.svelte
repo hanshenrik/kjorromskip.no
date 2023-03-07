@@ -20,6 +20,36 @@
   <h1>Musikk</h1>
   <div class="releases">
     <div class="release">
+      <!-- <a
+        href="https://open.spotify.com/track/7rmzPefl4J4BmEhnz51nY3"
+        class="cover-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      > -->
+      <img
+        src="https://i1.sndcdn.com/artworks-SM3C4SGPruyWAyOL-zZZREg-t500x500.jpg"
+        alt="natteting"
+        class="cover"
+      />
+      <!-- </a> -->
+      natteting (album)
+    </div>
+    <div class="release">
+      <a
+        href="https://open.spotify.com/track/3qs27OFo6B9Lqc0GPPbO1v?si=5277caceac044e65"
+        class="cover-link"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        <img
+          src="https://i1.sndcdn.com/artworks-5qC0wHTkn8GHAWBg-KgbP0g-t500x500.jpg"
+          alt="oslo gigolo"
+          class="cover"
+        />
+      </a>
+      oslo gigolo (singel)
+    </div>
+    <div class="release">
       <a
         href="https://open.spotify.com/track/25p9haFiESoTwbjdQWKplu?si=c3e5c7ce1794477d"
         class="cover-link"
@@ -32,7 +62,7 @@
           class="cover"
         />
       </a>
-      mr rino
+      mr rino (singel)
     </div>
     <div class="release">
       <a
@@ -47,7 +77,7 @@
           class="cover"
         />
       </a>
-      Chili Cheese / Premadonna
+      Chili Cheese / Premadonna (dobbelsingel)
     </div>
     <div class="release">
       <a
@@ -62,7 +92,7 @@
           class="cover"
         />
       </a>
-      Romturist
+      Romturist (singel)
     </div>
   </div>
   <div class="contact">
