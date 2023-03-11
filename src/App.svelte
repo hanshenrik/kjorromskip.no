@@ -20,18 +20,18 @@
   <h1>Musikk</h1>
   <div class="releases">
     <div class="release">
-      <!-- <a
-        href="https://open.spotify.com/track/7rmzPefl4J4BmEhnz51nY3"
+      <a
+        href="https://open.spotify.com/album/7rmzPefl4J4BmEhnz51nY3"
         class="cover-link"
         rel="noopener noreferrer"
         target="_blank"
-      > -->
-      <img
-        src="https://i1.sndcdn.com/artworks-SM3C4SGPruyWAyOL-zZZREg-t500x500.jpg"
-        alt="natteting"
-        class="cover"
-      />
-      <!-- </a> -->
+      >
+        <img
+          src="https://i1.sndcdn.com/artworks-SM3C4SGPruyWAyOL-zZZREg-t500x500.jpg"
+          alt="natteting"
+          class="cover"
+        />
+      </a>
       natteting (album)
     </div>
     <div class="release">
