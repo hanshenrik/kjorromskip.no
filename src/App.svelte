@@ -3,20 +3,9 @@
 </script>
 
 <div class="wrapper">
-  <div class="release">
-    <iframe
-      title="Kjør Romskip – Romturist"
-      class="youtube"
-      width="560"
-      height="315"
-      src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    />
-    Romturist (musikkvideo)
+  <div class="floating-spaceship-wrapper">
+    <div class="floating-spaceship">{name}</div>
   </div>
-  <div class="floating-spaceship">{name}</div>
   <h1>Musikk</h1>
   <div class="releases">
     <div class="release">
@@ -95,6 +84,24 @@
       Romturist (singel)
     </div>
   </div>
+  <div class="release">
+    <iframe
+      title="Kjør Romskip – Romturist"
+      class="youtube"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/-GzNoOeA7ho"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+    Romturist (musikkvideo)
+  </div>
+  <div class="buy-vinyl-section">
+    <h1>Kjøp vinyl!</h1>
+    <em>natteting</em> finnes i begrenset opplag på vinyl.<br />Fysen? Send oss
+    en DM på Instagram, så finner vi ut av det!
+  </div>
   <div class="contact">
     <h1>Kontakt</h1>
     <a href="mailto:kjor.romskip@gmail.com">kjor.romskip@gmail.com</a>
@@ -106,9 +113,12 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    justify-items: center;
     gap: 2rem;
     padding: 5rem 0;
+  }
+
+  .floating-spaceship-wrapper {
+    transform: scaleX(-1);
   }
 
   .floating-spaceship {
@@ -179,13 +189,7 @@
 
   .release {
     display: grid;
-    justify-items: center;
     gap: 1rem;
-  }
-
-  .contact {
-    text-align: center;
-    font-size: 0.8rem;
   }
 
   @keyframes move-around {
@@ -193,22 +197,22 @@
       transform: translate(0, 0) rotate(0);
     }
     10% {
-      transform: translate(100px, -100px) rotate(0);
+      transform: translate(80px, -80px) rotate(0);
     }
     25% {
       transform: translate(70px, 0) rotate(90deg);
     }
     50% {
-      transform: translate(150px, 100px) rotate(30deg);
+      transform: translate(120px, 100px) rotate(30deg);
     }
     55% {
-      transform: translate(200px, 100px) rotate(70deg);
+      transform: translate(140px, 120px) rotate(70deg);
     }
     75% {
       transform: translate(50px, 300px) rotate(-170deg);
     }
     90% {
-      transform: translate(0, 50px) rotate(270deg);
+      transform: translate(20px, 50px) rotate(270deg);
     }
     100% {
       transform: translate(0, 0) rotate(-360deg);
