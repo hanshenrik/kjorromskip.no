@@ -100,7 +100,10 @@
   <div class="buy-vinyl-section">
     <h1>Kjøp vinyl!</h1>
     <em>natteting</em> finnes i begrenset opplag på vinyl.<br />Fysen? Send oss
-    en DM på Instagram, så finner vi ut av det!
+    en
+    <a href="https://instagram.com/kjorromskip" target="_blank"
+      >DM på Instagram</a
+    >, så finner vi ut av det!
   </div>
   <div class="contact">
     <h1>Kontakt</h1>
