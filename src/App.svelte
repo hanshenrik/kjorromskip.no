@@ -84,6 +84,20 @@
       Romturist (singel)
     </div>
   </div>
+  <h1>Video</h1>
+  <div class="release">
+    <iframe
+      title="Kjør Romskip – gnist"
+      class="youtube"
+      width="560"
+      height="315"
+      src="https://www.youtube-nocookie.com/embed/qOg_ieDhuS4"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    />
+    gnist (musikkvideo)
+  </div>
   <div class="release">
     <iframe
       title="Kjør Romskip – Romturist"
