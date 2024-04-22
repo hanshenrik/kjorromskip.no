@@ -113,11 +113,18 @@
   </div>
   <div class="buy-vinyl-section">
     <h1>Kjøp vinyl!</h1>
-    <em>natteting</em> finnes i begrenset opplag på vinyl.<br />Fysen? Send oss
-    en
-    <a href="https://instagram.com/kjorromskip" target="_blank"
-      >DM på Instagram</a
-    >, så finner vi ut av det!
+    <em>natteting</em> finnes i begrenset opplag på vinyl. Fysen? Da kan du
+    <a href="https://merchsjappa.no/artist/kjoer-romskip/" target="_blank"
+      >kjøpe den i Merchsjappa</a
+    >
+    eller på neste konsert.
+    <br />
+    <br />
+    <a
+      href="https://merchsjappa.no/artist/kjoer-romskip/"
+      target="_blank"
+      class="primary">Gå til Merchsjappa</a
+    >
   </div>
   <div>
     <h1>Konserter</h1>
@@ -150,6 +157,22 @@
 </div>
 
 <style>
+  a,
+  a:active,
+  a:visited {
+    color: #272352;
+    border-bottom: 2px solid #272352;
+  }
+
+  a:hover {
+    text-decoration: none;
+    background-color: #272352;
+    color: white;
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+  }
+
   .wrapper {
     display: grid;
     justify-content: center;
@@ -233,6 +256,31 @@
   .release {
     display: grid;
     gap: 1rem;
+  }
+
+  .primary {
+    padding: 12px 16px;
+    display: block;
+    width: fit-content;
+    border-radius: 4px;
+    box-shadow: -3px 3px 0px 0px rgba(0, 0, 0, 0.7);
+    background-color: #f6d052;
+    color: black;
+    transition:
+      color 0.3s ease-in-out,
+      background-color 0.3s ease-in-out;
+    text-decoration: none;
+    margin: auto;
+  }
+  .primary:hover {
+    background-color: #3f3e7a;
+    color: white;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .primary {
+      margin: 0;
+    }
   }
 
   @keyframes move-around {
