@@ -152,7 +152,7 @@
   </div>
   <div class="contact">
     <h1>Kontakt</h1>
-    <a href="mailto:kjor.romskip@gmail.com">kjor.romskip@gmail.com</a>
+    <a href="mailto:ok@kjorromskip.no">ok@kjorromskip.no</a>
   </div>
 </div>
 
