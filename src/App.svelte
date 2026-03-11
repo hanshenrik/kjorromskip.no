@@ -114,17 +114,8 @@
   <div class="buy-vinyl-section">
     <h1>Kjøp vinyl!</h1>
     <em>natteting</em> finnes i begrenset opplag på vinyl. Fysen? Da kan du
-    <a href="https://merchsjappa.no/artist/kjoer-romskip/" target="_blank"
-      >kjøpe den i Merchsjappa</a
-    >
-    eller på neste konsert.
-    <br />
-    <br />
-    <a
-      href="https://merchsjappa.no/artist/kjoer-romskip/"
-      target="_blank"
-      class="primary">Gå til Merchsjappa</a
-    >
+    <a href="mailto:ok@kjorromskip.no">ta kontakt med oss</a>
+    eller komme på neste konsert.
   </div>
   <div>
     <h1>Konserter</h1>
