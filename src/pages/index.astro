@@ -1,0 +1,148 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const name = "🚀";
+
+const releases = [
+  {
+    href: "https://open.spotify.com/album/7rmzPefl4J4BmEhnz51nY3",
+    src: "https://i1.sndcdn.com/artworks-SM3C4SGPruyWAyOL-zZZREg-t500x500.jpg",
+    alt: "natteting",
+    title: "natteting (album)",
+  },
+  {
+    href: "https://open.spotify.com/track/3qs27OFo6B9Lqc0GPPbO1v?si=5277caceac044e65",
+    src: "https://i1.sndcdn.com/artworks-5qC0wHTkn8GHAWBg-KgbP0g-t500x500.jpg",
+    alt: "oslo gigolo",
+    title: "oslo gigolo (singel)",
+  },
+  {
+    href: "https://open.spotify.com/track/25p9haFiESoTwbjdQWKplu?si=c3e5c7ce1794477d",
+    src: "https://i1.sndcdn.com/artworks-rjAKbKgxRT3NSpcG-5OQ9JQ-t500x500.jpg",
+    alt: "mr rino",
+    title: "mr rino (singel)",
+  },
+  {
+    href: "https://open.spotify.com/album/10qT4ktbWSHt0l8gLwO65f?si=DMkFo0BqQgqYjJ9aVYUQ3A",
+    src: "https://i1.sndcdn.com/artworks-rb5N8WJKUzH34n3f-0tMdjA-t500x500.jpg",
+    alt: "Chili Cheese / Premadonna",
+    title: "Chili Cheese / Premadonna (dobbelsingel)",
+  },
+  {
+    href: "https://open.spotify.com/track/0ftuszDppBh03LyyoUZwO8?si=e01f34bd13c840b4",
+    src: "https://i1.sndcdn.com/artworks-000572129276-8kpg9o-t500x500.jpg",
+    alt: "Romturist",
+    title: "Romturist (singel)",
+  },
+];
+
+const videos = [
+  {
+    title: "Kjør Romskip – gnist",
+    src: "https://www.youtube-nocookie.com/embed/qOg_ieDhuS4",
+    label: "gnist (musikkvideo)",
+  },
+  {
+    title: "Kjør Romskip – Romturist",
+    src: "https://www.youtube-nocookie.com/embed/-GzNoOeA7ho",
+    label: "Romturist (musikkvideo)",
+  },
+];
+---
+
+<BaseLayout>
+  <div class="grid justify-center items-center gap-8 py-20 px-4 max-w-4xl mx-auto">
+    <div class="scale-x-[-1]">
+      <div
+        class="text-center text-[4rem] animate-[move-around_20s_ease-in-out_1s_infinite]"
+      >
+        {name}
+      </div>
+    </div>
+
+    <h1 class="text-3xl font-bold text-center">Musikk</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+      {
+        releases.map((release) => (
+          <div class="grid gap-4 w-full max-w-[375px]">
+            <a
+              href={release.href}
+              class="group block border-none! p-0!"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                src={release.src}
+                alt={release.alt}
+                class="cover transition-all duration-300 group-hover:hue-rotate-180 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.7)]"
+              />
+            </a>
+            <div class="text-center md:text-left">{release.title}</div>
+          </div>
+        ))
+      }
+    </div>
+
+    <h1 class="text-3xl font-bold text-center">Video</h1>
+    <div class="grid grid-cols-1 gap-8 justify-items-center w-full">
+      {
+        videos.map((video) => (
+          <div class="grid gap-4 w-full">
+            <iframe
+              title={video.title}
+              class="youtube w-full aspect-video h-auto"
+              src={video.src}
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+            <div class="text-center">{video.label}</div>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="buy-vinyl-section grid gap-4 text-center">
+      <h1 class="text-3xl font-bold">Kjøp vinyl!</h1>
+      <p>
+        <em class="italic">natteting</em> finnes i begrenset opplag på vinyl. Fysen? Da kan du
+        <a href="mailto:ok@kjorromskip.no" class="font-bold">ta kontakt med oss</a>
+        eller komme på neste konsert.
+      </p>
+    </div>
+
+    <div class="grid gap-4 text-center">
+      <h1 class="text-3xl font-bold">Konserter</h1>
+      <a
+        href="https://www.songkick.com/artists/10064686"
+        class="songkick-widget block! border-none!"
+        data-theme="dark"
+        data-track-button="on"
+        data-detect-style="off"
+        data-background-color="rgb(0,0,0,1)"
+        data-font-color="rgb(255,255,255,1)"
+        data-button-bg-color="rgb(255,255,255,1)"
+        data-button-text-color="rgb(0,0,0,1)"
+        data-locale="en"
+        data-other-artists="on"
+        data-share-button="on"
+        data-country-filter="on"
+        data-rsvp="on"
+        data-request-show="on"
+        data-past-events="off"
+        data-past-events-offtour="off"
+        data-remind-me="off"
+        style="display: none;">Songkick</a
+      >
+    </div>
+
+    <div class="contact grid gap-4 text-center">
+      <h1 class="text-3xl font-bold">Kontakt</h1>
+      <a href="mailto:ok@kjorromskip.no" class="text-xl font-bold break-all">ok@kjorromskip.no</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  /* Base styles are in global.css */
+</style>

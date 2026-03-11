@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  html,
+  body {
+    @apply h-full w-full;
+  }
+
+  body {
+    @apply m-0 p-2 box-border text-base bg-[#9bcedb] text-[#333];
+    font-family: "Courier New", Courier, monospace, sans-serif;
+    animation: colorchange 20s infinite;
+  }
+
+  a {
+    @apply text-[#272352] no-underline border-b-2 border-[#272352] transition-colors duration-300 ease-in-out;
+  }
+
+  a:hover {
+    @apply bg-[#272352] text-white;
+  }
+
+  iframe.youtube,
+  img.cover {
+    @apply rounded shadow-[-6px_6px_0px_0px_rgba(0,0,0,0.7)];
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    background: #9bcedb;
+  }
+  25% {
+    background: #7fbea5;
+  }
+  50% {
+    background: #7ed6f1;
+  }
+  75% {
+    background: #73d6af;
+  }
+  100% {
+    background: #9bcedb;
+  }
+}
+
+@keyframes move-around {
+  0% {
+    transform: translate(0, 0) rotate(0);
+  }
+  10% {
+    transform: translate(80px, -80px) rotate(0);
+  }
+  25% {
+    transform: translate(70px, 0) rotate(90deg);
+  }
+  50% {
+    transform: translate(120px, 100px) rotate(30deg);
+  }
+  55% {
+    transform: translate(140px, 120px) rotate(70deg);
+  }
+  75% {
+    transform: translate(50px, 300px) rotate(-170deg);
+  }
+  90% {
+    transform: translate(20px, 50px) rotate(270deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(-360deg);
+  }
+}
