@@ -60,59 +60,59 @@ const videos = [
       </div>
     </div>
 
-    <h1 class="text-3xl font-bold text-center">Musikk</h1>
+    <h1 class="text-3xl font-semibold">Musikk</h1>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
       {
         releases.map((release) => (
           <div class="grid gap-4 w-full max-w-[375px]">
             <a
               href={release.href}
-              class="group block border-none! p-0!"
+              class="group no-hover-bg rounded block border-none!"
               rel="noopener noreferrer"
               target="_blank"
             >
               <img
                 src={release.src}
                 alt={release.alt}
-                class="cover transition-all duration-300 group-hover:hue-rotate-180 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:shadow-[-10px_10px_0px_0px_rgba(0,0,0,0.7)]"
+                class="cover transition-all duration-300 group-hover:hue-rotate-180"
               />
             </a>
-            <div class="text-center md:text-left">{release.title}</div>
+            <div class="md:text-left">{release.title}</div>
           </div>
         ))
       }
     </div>
 
-    <h1 class="text-3xl font-bold text-center">Video</h1>
+    <h1 class="text-3xl font-semibold">Video</h1>
     <div class="grid grid-cols-1 gap-8 justify-items-center w-full">
       {
         videos.map((video) => (
           <div class="grid gap-4 w-full">
             <iframe
               title={video.title}
-              class="youtube w-full aspect-video h-auto"
+              class="cover w-full aspect-video h-auto"
               src={video.src}
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             />
-            <div class="text-center">{video.label}</div>
+            <div class="">{video.label}</div>
           </div>
         ))
       }
     </div>
 
-    <div class="buy-vinyl-section grid gap-4 text-center">
-      <h1 class="text-3xl font-bold">Kjøp vinyl!</h1>
+    <div class="buy-vinyl-section grid gap-4">
+      <h1 class="text-3xl font-semibold">Kjøp vinyl!</h1>
       <p>
         <em class="italic">natteting</em> finnes i begrenset opplag på vinyl. Fysen? Da kan du
-        <a href="mailto:ok@kjorromskip.no" class="font-bold">ta kontakt med oss</a>
+        <a href="mailto:ok@kjorromskip.no" class="">ta kontakt med oss</a>
         eller komme på neste konsert.
       </p>
     </div>
 
-    <div class="grid gap-4 text-center">
-      <h1 class="text-3xl font-bold">Konserter</h1>
+    <div class="grid gap-4">
+      <h1 class="text-3xl font-semibold">Konserter</h1>
       <a
         href="https://www.songkick.com/artists/10064686"
         class="songkick-widget block! border-none!"
@@ -136,9 +136,9 @@ const videos = [
       >
     </div>
 
-    <div class="contact grid gap-4 text-center">
-      <h1 class="text-3xl font-bold">Kontakt</h1>
-      <a href="mailto:ok@kjorromskip.no" class="text-xl font-bold break-all">ok@kjorromskip.no</a>
+    <div class="contact grid gap-4">
+      <h1 class="text-3xl font-semibold">Kontakt</h1>
+      <a href="mailto:ok@kjorromskip.no" class="w-fit inline-block text-xl break-all">ok@kjorromskip.no</a>
     </div>
   </div>
 </BaseLayout>
